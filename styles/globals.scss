@@ -105,3 +105,46 @@ a {
     color-scheme: dark;
   }
 }
+
+
+
+.main {
+  width:250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin:0 auto 0;
+  //align-items: center;
+  
+  min-height: 100vh;
+  input{
+    width:100%;
+    text-align:right;
+    border:1px solid cornflowerblue;
+    min-height:50px;
+    margin-bottom:8px;
+    padding:8px;
+  }
+  .button-group{
+    width:250px;
+    display:grid;
+    //grid-auto-flow: column;
+    grid-template-rows:repeat(5,1fr);
+    grid-template-columns: repeat(4, 1fr);
+   
+    
+    button{
+      min-width:60px;
+      min-height:60px;
+      cursor:pointer;
+    }
+  }
+  .result{
+    margin-top:8px;
+    min-height:40px;
+    text-align:right;
+    border-bottom:2px solid cornflowerblue;
+    font-size:3rem;
+
+  }
+}
